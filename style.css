@@ -10,7 +10,7 @@ body {
 
 /* Header styles */
 header {
-  background-color: #6a0dad; 
+  background-color: #6a0dad;
   color: white;
   padding: 10px 20px;
   text-align: center;
@@ -145,9 +145,9 @@ section {
   font-size: 2rem;
 }
 
-#slack img {
+/* #slack img {
   border: 0.5rem white solid;
-}
+} */
 
 /* CONTACT */
 #contact {
@@ -191,7 +191,7 @@ footer {
   header {
     align-items: flex-start;
   }
- 
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -208,7 +208,7 @@ footer {
   .nav-links li {
     margin: 10px 0;
     background: transparent;
-    padding:0 5px;
+    padding: 0 5px;
     border-radius: none;
     margin: 5px 0;
   }
