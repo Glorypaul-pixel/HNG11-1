@@ -19,6 +19,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 header .logo {
@@ -60,6 +61,7 @@ header ul li a {
 /* Section styles */
 section {
   margin: 20px 0;
+  cursor: default;
 }
 
 .details {
@@ -74,8 +76,10 @@ section {
   color: #6a0dad;
 }
 
-.links a {
+.tags a {
   text-decoration: none;
+  color: white;
+  display: flex;
 }
 
 .writeup {
