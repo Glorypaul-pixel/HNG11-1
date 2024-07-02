@@ -1,0 +1,260 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+header {
+  background-color: #6a0dad; 
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  font-size: 1.5rem;
+}
+
+header nav {
+  position: relative;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+header ul li {
+  margin: 0 10px;
+}
+
+header ul li a {
+  color: #6a0dad;
+  text-decoration: none;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Section styles */
+section {
+  margin: 20px 0;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  color: #6a0dad;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.writeup {
+  text-align: center;
+  padding-top: 12rem;
+  padding-bottom: 4rem;
+}
+
+.writeup h1 {
+  color: #6a0dad;
+  font-size: 3.5rem;
+  line-height: 1rem;
+}
+
+.writeup p {
+  font-size: 1.2rem;
+}
+
+/* ABOUT */
+#about {
+  background-color: #6a0dad;
+  color: white;
+  padding: 2rem;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#about p {
+  font-size: 1.2rem;
+}
+
+#about ul li {
+  color: #6a0dad;
+}
+
+/* SKILLS */
+#skills {
+  padding: 2rem;
+}
+
+#skills h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#skills ul li {
+  background-color: #6a0dad;
+  color: white;
+}
+
+/* SLACK DETAILS */
+#slack {
+  background-color: #6a0dad;
+  color: white;
+  padding: 2rem;
+}
+
+#slack h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#slack img {
+  border: 0.5rem white solid;
+}
+
+/* CONTACT */
+#contact {
+  padding: 2rem;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#contact a {
+  color: #6a0dad;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #e7e7e7;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+footer {
+  background-color: #6a0dad;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  header {
+    align-items: flex-start;
+  }
+ 
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 250px;
+    text-align: center;
+    background-color: #6a0dad;
+    position: absolute;
+    top: 100%;
+    left: -600%;
+    text-align: start;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    background: transparent;
+    padding:0 5px;
+    border-radius: none;
+    margin: 5px 0;
+  }
+  .nav-links li a {
+    color: white;
+  }
+
+  .nav-links.active {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .writeup {
+    padding: 6rem 1rem 2rem 1rem;
+  }
+
+  .writeup h1 {
+    font-size: 2.5rem;
+  }
+
+  #about,
+  #skills,
+  #slack,
+  #contact {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .writeup h1 {
+    font-size: 2rem;
+  }
+
+  .writeup p {
+    font-size: 1rem;
+  }
+
+  #about h2,
+  #skills h2,
+  #slack h2,
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+}
